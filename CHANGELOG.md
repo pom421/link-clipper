@@ -1,5 +1,11 @@
 # @pom421/link-clipper
 
+## 1.0.3
+
+### Patch Changes
+
+- 159a592: Add an option for storing the md file
+
 ## 1.0.2
 
 ### Patch Changes
