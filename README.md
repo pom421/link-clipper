@@ -20,3 +20,15 @@ async function main() {
   console.log(`File created: ${filePath}`);
 }
 ```
+
+## Release
+
+```shell
+// run changeset to document your new release
+npx changeset
+
+// commit your files
+
+// version package.json and publish on npmjs
+npm run local-release
+```

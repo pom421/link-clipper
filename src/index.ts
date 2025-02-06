@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import { JSDOM } from "jsdom";
 import * as fs from "fs/promises";
 
-async function clipLink(url: string): Promise<void> {
+export async function clipLink(url: string): Promise<void> {
   const response = await fetch(url);
   const html = await response.text();
   const dom = new JSDOM(html);
