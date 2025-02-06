@@ -1,0 +1,25 @@
+{
+  "name": "link-clipper",
+  "version": "1.0.0",
+  "description": "A module to clip links from a webpage and save them to a markdown file with a frontmatter",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clip": "tsc && npx tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.13.1",
+    "jsdom": "^26.0.0",
+    "node-fetch": "^2.7.0",
+    "turndown": "^7.2.0",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node-fetch": "^2.6.12",
+    "@types/turndown": "^5.0.5"
+  }
+}
