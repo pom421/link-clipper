@@ -28,6 +28,8 @@ async function main() {
 npx changeset
 
 // commit your files
+git add .
+git commit -m "my comment"
 
 // version package.json and publish on npmjs
 npm run local-release
