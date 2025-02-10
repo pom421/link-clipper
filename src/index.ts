@@ -14,9 +14,9 @@ export async function clipLink(url: string, options?: ClipOptions): Promise<stri
   const title = dom.window.document.title || "Untitled";
 
   const date = new Date().toISOString().split("T")[0];
-  const filename = `${date} - ${title.replace(/[^a-z0-9\s]/gi, " ").trim()}.md`;
+  const filename = `${date} - ${title.trim()}.md`;
   const outputDir = options?.outputDir ?? ".";
-  const fullPath = path.join(outputDir, filename);
+  const fullPath = path.resolve(outputDir, filename);
 
   const frontmatter = `---
 title: ${title}
@@ -36,6 +36,9 @@ url: ${url}
 //   process.exit(1);
 // }
 
-// const url = "https://code.visualstudio.com/docs/getstarted/keybindings#_keyboard-shortcuts-editor";
+// const url =
+//   "https://www.welcometothejungle.com/fr/companies/communaute-beta-gouv/jobs/developpeur-fullstack-senior-pour-aquapreneur_paris?q=81cd036f43f8f7569a69a323083f5b84&o=a551e3b5-c1fb-462c-a048-235ad276fb48";
 
-// clipLink(url, { outputDir: "clippings" }).catch(console.error);
+// clipLink(url, { outputDir: "clippings" })
+//   .then((filename) => console.log("filename " + filename))
+//   .catch(console.error);
