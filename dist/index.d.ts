@@ -1,4 +1,7 @@
 export interface ClipOptions {
-    outputDir: string;
+    tags?: string[];
+    comment?: string;
+    outputDir?: string;
+    url: string;
 }
-export declare function clipLink(url: string, options?: ClipOptions): Promise<string>;
+export declare function clipLink({ url, tags, comment, outputDir }: ClipOptions): Promise<string>;
