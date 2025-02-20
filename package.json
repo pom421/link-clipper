@@ -20,13 +20,13 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
-    "ci": "npm run build && npm run check-exports",
+    "prepare": "pnpm run build",
+    "ci": "pnpm run build && pnpm run check-exports",
     "format": "prettier --write .",
     "check-format": "prettier --check .",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "local-release": "changeset version && changeset publish",
-    "prepublishOnly": "npm run ci",
+    "prepublishOnly": "pnpm run ci",
     "clip": "tsc && npx tsx src/index.ts"
   },
   "dependencies": {

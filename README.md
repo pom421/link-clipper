@@ -32,5 +32,5 @@ git add .
 git commit -m "my comment"
 
 // version package.json and publish on npmjs
-npm run local-release
+pnpm run local-release
 ```
