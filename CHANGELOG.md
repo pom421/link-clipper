@@ -1,5 +1,11 @@
 # @pom421/link-clipper
 
+## 1.0.4
+
+### Patch Changes
+
+- e620c4c: Some minor stuff for eslint
+
 ## 1.0.3
 
 ### Patch Changes

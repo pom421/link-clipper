@@ -1,6 +1,6 @@
 {
   "name": "@pom421/link-clipper",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A module to clip links from a webpage and save them to a markdown file with a frontmatter",
   "keywords": [
     "typescript",
