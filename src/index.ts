@@ -10,7 +10,7 @@ export interface ClipOptions {
   url: string;
 }
 
-  export async function clipLink({ url, tags = [], comment = "", outputDir = "." }: ClipOptions): Promise<string> {
+export async function clipLink({ url, tags = [], comment = "", outputDir = "." }: ClipOptions): Promise<string> {
   const response = await fetch(url);
   const html = await response.text();
   const dom = new JSDOM(html);

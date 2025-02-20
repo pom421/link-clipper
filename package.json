@@ -2,11 +2,18 @@
   "name": "@pom421/link-clipper",
   "version": "1.0.3",
   "description": "A module to clip links from a webpage and save them to a markdown file with a frontmatter",
+  "keywords": [
+    "typescript",
+    "link",
+    "clipper"
+  ],
+  "author": "pom421",
+  "license": "MIT",
+  "type": "module",
   "main": "dist/index.js",
   "files": [
     "dist"
   ],
-  "type": "module",
   "homepage": "https://github.com/pom421/link-clipper",
   "bugs": {
     "url": "https://github.com/pom421/link-clipper/issues"
@@ -22,13 +29,6 @@
     "prepublishOnly": "npm run ci",
     "clip": "tsc && npx tsx src/index.ts"
   },
-  "keywords": [
-    "typescript",
-    "link",
-    "clipper"
-  ],
-  "author": "pom421",
-  "license": "MIT",
   "dependencies": {
     "@types/node": "^22.13.1",
     "jsdom": "^26.0.0",
@@ -41,10 +41,13 @@
     "@types/jsdom": "^21.1.7",
     "@types/node-fetch": "^2.6.12",
     "@types/turndown": "^5.0.5",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.3"
-  },
-  "prettier": {
-    "printWidth": 120
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.15.0",
+    "prettier": "^3.5.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
   }
 }
