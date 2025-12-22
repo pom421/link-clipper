@@ -21,7 +21,7 @@ async function main() {
 }
 ```
 
-## Release
+## Release: mode d'emploi
 
 ```shell
 // run changeset to document your new release
